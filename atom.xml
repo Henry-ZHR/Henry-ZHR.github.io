@@ -44,6 +44,33 @@
   </entry>
   
   <entry>
+    <title>C++ - 并查集模板</title>
+    <link href="https://Henry-ZHR.github.io/2019-08-24/UnionFind-template/"/>
+    <id>https://Henry-ZHR.github.io/2019-08-24/UnionFind-template/</id>
+    <published>2019-08-24T02:42:57.000Z</published>
+    <updated>2019-10-24T13:55:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code class="cpp">#include &lt;cstddef&gt;#include &lt;stdexcept&gt;#include &lt;vector&gt;template&lt;bool index_begin_from_zero = false&gt;class Union_Find{private:    std::vector&lt;size_t&gt; parent, rank;    size_t Find_unchecked(size_t x)    {        return x == this-&gt;parent[x] ? x : this-&gt;parent[x] = this-&gt;Find_unchecked(this-&gt;parent[x]);    }public:    Union_Find(size_t max_size = static_cast&lt;size_t&gt;(0)) :parent(max_size), rank(max_size, static_cast&lt;size_t&gt;(0))    {        try        {            for (size_t i = static_cast&lt;size_t&gt;(0); i &lt; max_size; ++i) this-&gt;parent[i] = i;        }        catch (std::exception const&amp; e)        {            throw e;        }    }    Union_Find(const Union_Find&amp; x) :parent(x.parent), rank(x.rank) {}    inline Union_Find&amp; operator=(Union_Find x)    {        this-&gt;parent = x.parent;        this-&gt;rank = x.rank;        return *this;    }    inline size_t size()    {        return this-&gt;parent.size();    }    inline void resize(size_t max_size)    {        *this = Union_Find(max_size);        return;    }    size_t Find(size_t x)    {        try        {            size_t res;            if (!index_begin_from_zero)            {#ifdef DEBUG                if (!x) throw std::out_of_range(&quot;Union_Find::Find&quot;);#endif                --x;            }#ifdef DEBUG            if (x &gt;= this-&gt;size()) throw std::out_of_range(&quot;Union_Find::Find&quot;);#endif            res = this-&gt;Find_unchecked(x);            return index_begin_from_zero ? res : ++res;        }        catch (std::exception const&amp; e)        {            throw e;        }    }    inline bool Check(size_t x, size_t y)    {        try        {            if (!index_begin_from_zero)            {#ifdef DEBUG                if (!x || !y) throw std::out_of_range(&quot;Union_Find::Check&quot;);#endif                --x;                --y;            }#ifdef DEBUG            if (x &gt;= this-&gt;size() || y &gt;= this-&gt;size()) throw std::out_of_range(&quot;Union_Find::Check&quot;);#endif            return this-&gt;Find_unchecked(x) == this-&gt;Find_unchecked(y);        }        catch (std::exception const&amp; e)        {            throw e;        }    }    inline void Union(size_t x, size_t y)    {        try        {            size_t fx, fy;            if (!index_begin_from_zero)            {#ifdef DEBUG                if (!x || !y) throw std::out_of_range(&quot;Union_Find::Union&quot;);#endif                --x;                --y;            }#ifdef DEBUG            if (x &gt;= this-&gt;size() || y &gt;= this-&gt;size()) throw std::out_of_range(&quot;Union_Find::Union&quot;);#endif            fx = this-&gt;Find_unchecked(x);            fy = this-&gt;Find_unchecked(y);            if (fx != fy)            {                if (this-&gt;rank[fx] &lt; this-&gt;rank[fy]) this-&gt;parent[fx] = fy;                else                {                    this-&gt;parent[fy] = fx;                    if (this-&gt;rank[fx] == this-&gt;rank[fy])++this-&gt;rank[fx];                }            }        }        catch (std::exception const&amp; e)        {            throw e;        }    }};</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre&gt;&lt;code class=&quot;cpp&quot;&gt;#include &amp;lt;cstddef&amp;gt;
+#include &amp;lt;stdexcept&amp;gt;
+#include &amp;lt;vector&amp;gt;
+template&amp;lt;bool index_begin_from_zero = 
+      
+    
+    </summary>
+    
+    
+    
+      <category term="template" scheme="https://Henry-ZHR.github.io/tags/template/"/>
+    
+  </entry>
+  
+  <entry>
     <title>数学</title>
     <link href="https://Henry-ZHR.github.io/2019-02-11/maths/"/>
     <id>https://Henry-ZHR.github.io/2019-02-11/maths/</id>
