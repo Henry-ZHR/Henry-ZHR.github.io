@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://Henry-ZHR.github.io/"/>
-  <updated>2019-10-08T14:43:41.133Z</updated>
+  <updated>2019-11-08T15:22:22.084Z</updated>
   <id>https://Henry-ZHR.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于Visual Studio中使用boost出现“LNK1104 无法打开XXX”情况的解决方案</title>
+    <link href="https://Henry-ZHR.github.io/2019-11-08/boost-LNK1104/"/>
+    <id>https://Henry-ZHR.github.io/2019-11-08/boost-LNK1104/</id>
+    <published>2019-11-08T15:18:06.754Z</published>
+    <updated>2019-11-08T15:22:22.084Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>请注意该方法可能仅适用于用NuGet安装的boost</strong></p><p>用NuGet安装对应的库即可</p><p>例如出现<code>LNK1104 无法打开文件“libboost_system-vc141-mt-gd-x64-1_68.lib”</code></p><p>就直接用NuGet安装<code>boost_system-vc141</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;请注意该方法可能仅适用于用NuGet安装的boost&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用NuGet安装对应的库即可&lt;/p&gt;
+&lt;p&gt;例如出现&lt;code&gt;LNK1104 无法打开文件“libboost_system-vc141-mt-gd-x64-1_68.li
+      
+    
+    </summary>
+    
+    
+    
+      <category term="boost" scheme="https://Henry-ZHR.github.io/tags/boost/"/>
+    
+  </entry>
   
   <entry>
     <title>2019年“亲近自然 感恩生命”夏令营活动 A组</title>

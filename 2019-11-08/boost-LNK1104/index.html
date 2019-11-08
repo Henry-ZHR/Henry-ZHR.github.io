@@ -13,20 +13,25 @@
     
     
     
-    <title>归档 | zhanghengrui的博客</title>
+    <title>关于Visual Studio中使用boost出现“LNK1104 无法打开XXX”情况的解决方案 | zhanghengrui的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content>
-    <meta property="og:type" content="website">
-<meta property="og:title" content="zhanghengrui的博客">
-<meta property="og:url" content="https://Henry-ZHR.github.io/archives/index.html">
+    <meta name="keywords" content="boost">
+    <meta name="description" content="请注意该方法可能仅适用于用NuGet安装的boost 用NuGet安装对应的库即可 例如出现LNK1104 无法打开文件“libboost_system-vc141-mt-gd-x64-1_68.lib” 就直接用NuGet安装boost_system-vc141">
+<meta name="keywords" content="boost">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于Visual Studio中使用boost出现“LNK1104 无法打开XXX”情况的解决方案">
+<meta property="og:url" content="https://Henry-ZHR.github.io/2019-11-08/boost-LNK1104/index.html">
 <meta property="og:site_name" content="zhanghengrui的博客">
+<meta property="og:description" content="请注意该方法可能仅适用于用NuGet安装的boost 用NuGet安装对应的库即可 例如出现LNK1104 无法打开文件“libboost_system-vc141-mt-gd-x64-1_68.lib” 就直接用NuGet安装boost_system-vc141">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-08T15:22:22.084Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zhanghengrui的博客">
+<meta name="twitter:title" content="关于Visual Studio中使用boost出现“LNK1104 无法打开XXX”情况的解决方案">
+<meta name="twitter:description" content="请注意该方法可能仅适用于用NuGet安装的boost 用NuGet安装对应的库即可 例如出现LNK1104 无法打开文件“libboost_system-vc141-mt-gd-x64-1_68.lib” 就直接用NuGet安装boost_system-vc141">
     
         <link rel="alternate" type="application/atom+xml" title="zhanghengrui的博客" href="/atom.xml">
     
@@ -46,7 +51,7 @@
 <body>
     <div id="loading" class="active"></div>
 
-    <aside id="menu"  >
+    <aside id="menu" class="hide" >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -72,7 +77,7 @@
               </a>
             </li>
         
-            <li class="waves-block waves-effect active">
+            <li class="waves-block waves-effect">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 归档
@@ -104,7 +109,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">归档</div>
+        <div class="flex-col header-title ellipsis">关于Visual Studio中使用boost出现“LNK1104 无法打开XXX”情况的解决方案</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -119,11 +124,17 @@
         
     </div>
 </header>
-<header class="content-header archives-header">
+<header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">归档</h1>
+        <h1 class="title">关于Visual Studio中使用boost出现“LNK1104 无法打开XXX”情况的解决方案</h1>
         <h5 class="subtitle">
+            
+                <time datetime="2019-11-08T15:18:06.754Z" itemprop="datePublished" class="page-time">
+  2019-11-08
+</time>
+
+
             
         </h5>
     </div>
@@ -133,157 +144,122 @@
 
 </header>
 
-<div class="container body-wrap fade">
-    
 
+<div class="container body-wrap">
     
+<article id="post-boost-LNK1104"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">关于Visual Studio中使用boost出现“LNK1104 无法打开XXX”情况的解决方案</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-11-08 23:18:06" datetime="2019-11-08T15:18:06.754Z"  itemprop="datePublished">2019-11-08</time>
+
             
-            <h3 class="archive-separator">十一月, 2019</h3>
-            <div class="waterfall">
-    
-
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-11-08 23:18:06" datetime="2019-11-08T15:18:06.754Z"  itemprop="datePublished">2019-11-08</time>
-
-      
 
 
-    </div>
-    
+            
 
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p><strong>请注意该方法可能仅适用于用NuGet安装的boost</strong></p>
+<p>用NuGet安装对应的库即可</p>
+<p>例如出现<code>LNK1104 无法打开文件“libboost_system-vc141-mt-gd-x64-1_68.lib”</code></p>
+<p>就直接用NuGet安装<code>boost_system-vc141</code></p>
 
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019-11-08/boost-LNK1104/">关于Visual Studio中使用boost出现“LNK1104 无法打开XXX”情况的解决方案</a>
-    </h3>
-  
+        </div>
 
-
-
-    
-    <div class="post-footer">
+        <blockquote class="post-copyright">
+    <div class="content">
         
+<span class="post-time">
+    最后更新时间：<time datetime="2019-11-08T15:22:22.084Z" itemprop="dateUpdated">2019-11-08 23:22:22</time>
+</span><br>
+
+
+        
+    </div>
+    <footer>
+        <a href="https://Henry-ZHR.github.io">
+            <img src="/img/avatar.png" alt="zhanghengrui">
+            zhanghengrui
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boost/">boost</a></li></ul>
 
+
+            
+
+
+        </div>
     </div>
-    
-  </article>
-</div>
 
     
-            </div> 
-            <h3 class="archive-separator">九月, 2019</h3>
-            <div class="waterfall">
-    
-
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-09-20 00:00:00" datetime="2019-09-19T16:00:00.000Z"  itemprop="datePublished">2019-09-20</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019-09-20/2019年“亲近自然-感恩生命”夏令营活动-A组/">2019年“亲近自然 感恩生命”夏令营活动 A组</a>
-    </h3>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
-
-
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小组/">小组</a></li></ul>
-
-    </div>
-    
-  </article>
-</div>
-
-    
-            </div> 
-            <h3 class="archive-separator">八月, 2019</h3>
-            <div class="waterfall">
-    
-
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-08-24 10:42:57" datetime="2019-08-24T02:42:57.000Z"  itemprop="datePublished">2019-08-24</time>
-
-      
-
-
-    </div>
-    
-
-
   
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019-08-24/UnionFind-template/">C++ - 并查集模板</a>
-    </h3>
+    <div class="waves-block waves-effect next">
+      <a href="/2019-09-20/2019年“亲近自然-感恩生命”夏令营活动-A组/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">2019年“亲近自然 感恩生命”夏令营活动 A组</h4>
+      </a>
+    </div>
   
+</nav>
 
 
 
     
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/template/">template</a></li></ul>
-
-    </div>
-    
-  </article>
-</div>
-
-    
-            </div> 
-            <h3 class="archive-separator">二月, 2019</h3>
-            <div class="waterfall">
-    
-
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-02-11 20:47:19" datetime="2019-02-11T12:47:19.000Z"  itemprop="datePublished">2019-02-11</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019-02-11/maths/">数学公式与定理收集</a>
-    </h3>
-  
 
 
 
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数学/">数学</a></li></ul>
 
-    </div>
-    
-  </article>
-</div>
 
-    
-    </div>
 
-    
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'true' == 'true',
+            appId: "UvMz15sPl45ktg01VR7C1btM-gzGzoHsz",
+            appKey: "UMWsorwWOM56lDiWdg6zOCpq",
+            avatar: "mm",
+            placeholder: "来都来了，评论一下吧~",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+</article>
+
+
+
 </div>
 
         <footer class="footer">
