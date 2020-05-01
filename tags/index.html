@@ -136,15 +136,15 @@
              active">全部</a>
         
 
-            <a href="/tags/小组/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light">小组</a>
+            <a href="/tags/boost/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light">boost</a>
 
         
 
-            <a href="/tags/template/" style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light">template</a>
+            <a href="/tags/小组/" style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light">小组</a>
 
         
 
-            <a href="/tags/boost/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">boost</a>
+            <a href="/tags/template/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">template</a>
 
         
 
@@ -168,6 +168,45 @@
 
 <div class="container body-wrap fade">
     
+
+            <h3 class="archive-separator" id="tag-boost">boost</h3>
+
+            <div class="waterfall">
+            
+
+                <div class="waterfall-item">
+  <article class="article-card archive-article">
+    <div class="post-meta">
+      <time class="post-time" title="2019-11-08 23:18:06" datetime="2019-11-08T15:18:06.754Z"  itemprop="datePublished">2019-11-08</time>
+
+      
+
+
+    </div>
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019-11-08/boost-LNK1104/">关于Visual Studio中使用boost出现“LNK1104 无法打开XXX”情况的解决方案</a>
+    </h3>
+  
+
+
+
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boost/">boost</a></li></ul>
+
+    </div>
+    
+  </article>
+</div>
+
+            
+            </div>
+            
 
             <h3 class="archive-separator" id="tag-小组">小组</h3>
 
@@ -237,45 +276,6 @@
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/template/">template</a></li></ul>
-
-    </div>
-    
-  </article>
-</div>
-
-            
-            </div>
-            
-
-            <h3 class="archive-separator" id="tag-boost">boost</h3>
-
-            <div class="waterfall">
-            
-
-                <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-11-08 23:18:06" datetime="2019-11-08T15:18:06.754Z"  itemprop="datePublished">2019-11-08</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019-11-08/boost-LNK1104/">关于Visual Studio中使用boost出现“LNK1104 无法打开XXX”情况的解决方案</a>
-    </h3>
-  
-
-
-
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boost/">boost</a></li></ul>
 
     </div>
     
@@ -425,24 +425,29 @@ var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
 
 <!-- mathjax config similar to math.stackexchange -->
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
+<script>
+    window.MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ["\\(", "\\)"]],
+            processEscapes: true,
+            autoload: {
+                color: [],
+                colorV2: ['color']
+            },
+            packages: {'[+]': ['noerrors']}
+        },
+        options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process'
+        },
+        loader: {
+            load: ['input/asciimath', '[tex]/noerrors']
+        }
+    };
 </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" id="MathJax-script" async></script>
 
-<script async src="https://cdn.jsdelivr.net/npm/mathjax/es5/node-main.min.js" async></script>
 
 
 
